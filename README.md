@@ -88,14 +88,31 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
   
 
+
 ## STM 32 CUBE PROGRAM :
 
+```c
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if((GPIO_Pin == GPIO_PIN_0)){
+		HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
+	}
+}
+```
 
 
 ## Output screen shots of proteus  :
+![441967611-144af4d4-5590-46e5-aca5-e3cde4103b91](https://github.com/user-attachments/assets/4e4cbd01-5ee4-470f-af6b-f52cbaefe342)
+
+![441967635-2622aaf8-f3a2-43ab-9182-4c4f1c0cc611](https://github.com/user-attachments/assets/94ee23d8-0f0e-4776-a1e6-43b9a0abb554)
+
  
  
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+![441967676-fd443565-56b1-4c8d-ad20-70929e72ee29](https://github.com/user-attachments/assets/e221fd11-eea3-4738-9048-7185c6a7ebca)
+
+
+
  
  
 ## Result :
